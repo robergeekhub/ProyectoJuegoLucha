@@ -1,0 +1,30 @@
+
+.seccionVisible {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    width: 99vw;
+    height: 97vh;
+}
+
+.general {
+    width: 75%;
+    height: 75%;
+}
+
+.general1 {
+    background-color: orange;
+}
+button{
+    width: 15em;
+    height: 5em;
+}
+.general2 {
+    background-color: green;
+
+}
+
+.general3 {
+    background-color: red;
+}
