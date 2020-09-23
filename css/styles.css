@@ -69,11 +69,12 @@ body{
 .empty{
   height: 20%;
   width: 10%;
+  opacity: 0.5;
 }
 .versus{
   background-image: url(../img/versus.jpg);
   height: 100%;
-  width: 15%;
+  width: 14.5%;
 }
 .player3{
   background-image: url(../img/playerfreezer.png);
@@ -97,5 +98,12 @@ body{
   border-color: black;
 }
 
-    
+.general3{
+  background-image: url(../img/torneojpg.jpg);
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+ 
 

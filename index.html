@@ -17,6 +17,8 @@
 
     <!--Segunda pantalla listado de personajes-->
     <section class="seccionVisible" id="fase2" style="display:none">
+      <button class="botonReturn" onclick="cambiaPantalla(1)">RETURN</button>
+          <button class="botonSelect" onclick="cambiaPantalla(3)">SELECT CHARACTER</button>
         <div class="general general2">
           <div class="fila1">
             <div class="player1"></div>
@@ -28,12 +30,18 @@
             <div class="player3"></div>
             <div class="empty"></div>
             <div class="player4"></div>
-      </section>
+          </div>
+         
+        <div>
+
+    </section>
 
     <!--Tercera pantalla enfrentamiento-->
     <section class="seccionVisible" id="fase3" style="display:none">
+      <button onclick="cambiaPantalla(1)">LLEVAME DE VUELTA AL PRINCIPIO</button>
+
         <div class="general general3">
-            <button onclick="cambiaPantalla(1)">LLEVAME DE VUELTA AL PRINCIPIO</button>
+           
         </div>
       </section>
     <script src="js/app.js"></script>
