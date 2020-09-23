@@ -1,30 +1,101 @@
-
-.seccionVisible {
-    justify-content: center;
+body{
+    margin: 0;
     display: flex;
     align-items: center;
+    justify-content: center;
     background-color: black;
-    width: 99vw;
-    height: 97vh;
+}
+.seccionVisible {
+    background-color: black;
+    height: 100vh; 
+    width:  100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .general {
+    width: 95%;
+    height: 90%;
+    margin: 2em auto;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .general1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .boton01{
+    background-color: white;
+  }
+
+  .general2{
+    background-image: url(../img/atalaya.jpg);
+    display: flex;
+    flex-direction: row;
+  }
+
+  .fila1{
+    background-color: tomato;
+    width: 70%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .player1{
+    background-image:url(../img/playerGoku.png);
+    height: 97%;
+    width: 11%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    border-style: solid;
+    border-color: black;
+  }
+.player2{
+    background-image: url(../img/playerVegeta.png);
+    height: 97%;
+    width: 11%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    border-style: solid;
+    border-color: black;
+}
+.empty{
+  height: 20%;
+  width: 10%;
+}
+.versus{
+  background-image: url(../img/versus.jpg);
+  height: 100%;
+  width: 15%;
+}
+.player3{
+  background-image: url(../img/playerfreezer.png);
+  width: 11%;
+  height: 97%;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    border-style: solid;
+    border-color: black;
+}
+.player4{
+  background-image: url(../img/playerboo.png);
+  width: 11%;
+  height: 97%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  border-color: black;
 }
 
-.general {
-    width: 75%;
-    height: 75%;
-}
+    
 
-.general1 {
-    background-color: orange;
-}
-button{
-    width: 15em;
-    height: 5em;
-}
-.general2 {
-    background-color: green;
-
-}
-
-.general3 {
-    background-color: red;
-}
