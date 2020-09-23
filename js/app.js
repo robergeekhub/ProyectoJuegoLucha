@@ -49,3 +49,12 @@ let player2 = document.getElementById("player2");
 let player3 = document.getElementById("player3");
 let player4 = document.getElementById("player4");
 
+const choosePJ = (event) => {
+    console.log("Hello");
+}
+
+player1.addEventListener("click", choosePJ)
+player2.addEventListener("click", choosePJ)
+player3.addEventListener("click", choosePJ)
+player4.addEventListener("click", choosePJ)
+
