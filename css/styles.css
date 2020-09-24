@@ -28,6 +28,8 @@ body{
 
   .boton01{
     background-color: white;
+    width: 10%;
+    height: 5%;
   }
 
   .general2{
@@ -67,4 +69,11 @@ body{
   flex-direction: column;
   width: 50%;
   height: 50%;
+}
+.pulsador{
+  font-family: sans-serif;
+  font-size: 400%;
+  border-radius: 2em;
+  color:red;
+  
 }
