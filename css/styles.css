@@ -33,69 +33,23 @@ body{
   .general2{
     background-image: url(../img/atalaya.jpg);
     display: flex;
-    flex-direction: row;
+    flex-direction: column; 
   }
 
-  .fila1{
-    background-color: tomato;
-    width: 70%;
-    height: 20%;
+  .personajes{
     display: flex;
-    flex-direction: row;
+    justify-content: center; 
+    align-items: center;
+    width: 80%;
+    height: 80%;
   }
-
-  .player1{
-    background-image:url(../img/playerGoku.png);
-    height: 97%;
-    width: 11%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-size: cover;
-    border-style: solid;
-    border-color: black;
-  }
-.player2{
-    background-image: url(../img/playerVegeta.png);
-    height: 97%;
-    width: 11%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-size: cover;
-    border-style: solid;
-    border-color: black;
+  
+.personajeImg {
+  color: darkgrey;
+  
 }
-.empty{
-  height: 20%;
-  width: 10%;
-  opacity: 0.5;
-}
-.versus{
-  background-image: url(../img/versus.jpg);
-  height: 100%;
-  width: 14.5%;
-}
-.player3{
-  background-image: url(../img/playerfreezer.png);
-  width: 11%;
-  height: 97%;
-  display: flex;
-    justify-content: center;
-    align-items: center;
-    background-size: cover;
-    border-style: solid;
-    border-color: black;
-}
-.player4{
-  background-image: url(../img/playerboo.png);
-  width: 11%;
-  height: 97%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-style: solid;
-  border-color: black;
+.personajeImg:hover {
+    filter: saturate(0);
 }
 
 .general3{
@@ -106,4 +60,11 @@ body{
     background-size: cover;
 }
  
-
+.columna {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  height: 50%;
+}
