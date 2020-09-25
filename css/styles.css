@@ -55,11 +55,11 @@ body{
 }
 
 .general3{
-  background-image: url(../img/torneojpg.jpg);
+  background-image: url(../img/Torneo.jpg);
   display: flex;
-    justify-content: center;
-    align-items: center;
-    background-size: cover;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
 }
  
 .columna {
@@ -76,4 +76,12 @@ body{
   border-radius: 2em;
   color:red;
   
+}
+#botonAtacar {
+  height: 20%;
+  width: 80%;
+}
+
+#imagenJugador1, #imagenJugador2 {
+  height: 70%;
 }
