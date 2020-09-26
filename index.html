@@ -24,7 +24,7 @@
           <div class="personajes">
             <div><img src="img/SonGoku.png" class="personajeImg GokuImg" id="personaje1"></div>
             <div><img src="img/Vegeta.png" class="personajeImg VegetaImg" id="personaje2"></div>
-            <div><img src="img/kidboo.png" class="personajeImg BooImg" id="personaje3"></div>
+            <div><img src="img/kidboo.png" class="personajeImg kidbooImg" id="personaje3"></div>
             <div><img src="img/freezer.png" class="personajeImg FreezerImg" id="personaje4"></div>
             </div>
           </div>
@@ -35,10 +35,11 @@
     <section class="seccionVisible" id="fase3" style="display:none">
         <div class="general general3">
            <div class="columna columna1">
-
+                <p class="nombreJugador1" id="nombreJugador1"></p>
+                <div class="barraVida">
+                <p class="vidaJugador1" id="vidaJugador1"></p>
+                </div>
                 <img id="imagenJugador1" src="">
-                <p id="nombreJugador1"></p>
-                <p id="vidaJugador1"></p>
                 
         </div>
           
@@ -46,10 +47,11 @@
       <button id="botonAtacar" class="pulsador" onclick="pulsaAtacar()" >ATACAR</button>
       
       <div class="columna columna2">
-                
+        <p class="nombreJugador2" id="nombreJugador2"></p>  
+        <div class="barraVida">
+        <p class="vidaJugador2" id="vidaJugador2"></p>  
+        </div>    
         <img id="imagenJugador2" src="">
-        <p id="nombreJugador2"></p>
-        <p id="vidaJugador2"></p>
         
       </div>
     </div>
@@ -62,10 +64,11 @@
 
       <img id="ganador" src="">
 
+      <p class="victoria">El Ganador del combate es:
+
       <p class ="texto" id="textoGanador"></p>
 
-      <p class="texto">ha ganado</p>
-      
+      </p>
       <button id="buttonReset" onclick="cambiaPantalla(1)">Volver a jugar</button>
 
   </div>

@@ -26,18 +26,14 @@ class Luchador {
         
         ganador();
 
-        let textoSelBatalla = document.getElementById("textoSelBatalla");
-        textoSelBatalla.innerText = 
-        (`${this.nombre} ataca a 
-        ${atacado.nombre} y le hace 
-        ${damage} de daño`);
+        
         
     }
 }
-let Goku = new Luchador ("Goku", 100,80,70,10,"img/SonGoku.png");
-let Vegeta = new Luchador ("Vegeta",100,70,20,8,"img/Vegeta.png");
+let Goku = new Luchador ("Goku", 100,80,70,9,"img/SonGoku.png");
+let Vegeta = new Luchador ("Vegeta",100,80,50,8,"img/Vegeta.png");
+let Boo = new Luchador ("Boo",100,90,70,7,"img/kidboo.png");
 let Freezer = new Luchador ("Freezer",100,90,60,3,"img/freezer.png");
-let Boo = new Luchador ("Boo",100,90,80,7,"img/kidboo.png");
 
 //Asignamos variables a las diferentes fases del juego
 let pantalla1 = document.getElementById("fase1");
@@ -195,10 +191,10 @@ const idToPj = (id) => {
             return Vegeta;
 
         case "personaje3":
-            return Freezer;
+            return Boo;
 
         case "personaje4":
-            return Boo;
+            return Freezer;
 
         default:
             "No has escogido un personaje"
@@ -227,10 +223,11 @@ const reset = () => {
     player2 = "";
 
 
-Goku = new Luchador ("Goku", 100,80,70,10,"img/SonGoku.png");
-Vegeta = new Luchador ("Vegeta",100,70,20,8,"img/Vegeta.png");
+Goku = new Luchador ("Goku", 100,80,70,9,"img/SonGoku.png");
+Vegeta = new Luchador ("Vegeta",100,80,50,8,"img/Vegeta.png");
+Boo = new Luchador ("Boo",100,90,70,7,"img/kidboo.png");
 Freezer = new Luchador ("Freezer",100,90,60,3,"img/freezer.png");
-Boo = new Luchador ("Boo",100,90,80,7,"img/kidboo.png");
+
 
 textoSeleccion.innerText = "Jugador 1, elige personaje";
 
