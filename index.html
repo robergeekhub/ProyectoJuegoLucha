@@ -11,8 +11,8 @@
     <!--Primera pantalla boton start-->
     <section class="seccionVisible" id="fase1">
         <div class="general general1">
-            <img src="img/portada.jpg" alt="fondo de pantalla" width=100% height=100%;>
-            <button class="boton01" onclick="cambiaPantalla(2)">START</button>
+            <img src="img/portada.jpg" alt="fondo de pantalla" width=100% height=100%>
+            <button class="boton01" onclick="cambiaPantalla(2)">START</button></div>
         </div>
     </section>
 
@@ -35,10 +35,15 @@
     <section class="seccionVisible" id="fase3" style="display:none">
         <div class="general general3">
            <div class="columna columna1">
+
                 <p class="nombreJugador1" id="nombreJugador1"></p>
+                
                 <div class="barraVida">
-                <p class="vidaJugador1" id="vidaJugador1"></p>
+                
+                  <p class="vidaJugador1" id="vidaJugador1"></p>
+                
                 </div>
+                
                 <img id="imagenJugador1" src="">
                 
         </div>
@@ -61,15 +66,20 @@
 <section class="seccionVisible" id="fase4" style="display: none">
     
   <div class="general general4">
+     
+    <div class="columna columna1">
+
+      <p class="victoria">El ganador del combate es:
+
+      <p class ="texto" id="textoGanador"></p></p>
 
       <img id="ganador" src="">
 
-      <p class="victoria">El Ganador del combate es:
+    </div>
 
-      <p class ="texto" id="textoGanador"></p>
+      <img class="comentarista" src="img/Comentarista.png">
 
-      </p>
-      <button id="buttonReset" onclick="cambiaPantalla(1)">Volver a jugar</button>
+      <button class="button" id="buttonReset" onclick="cambiaPantalla(1)">Volver a jugar</button>
 
   </div>
 </section>
