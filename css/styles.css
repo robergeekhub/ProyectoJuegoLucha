@@ -143,6 +143,7 @@ body{
   font-size: 230%;
   font-family: Avenir-Black,Arial;
   font-weight: bolder;
+  border: solid 0.1em black;
 }
 .general4{
   background-image: url(../img/Torneo.jpg);
@@ -162,6 +163,7 @@ body{
   font-size: 120%;
   font-family: Avenir-Black,Arial;
   font-weight: bolder;
+  border: solid 0.1em black;
 }
 
 .comentarista{
@@ -175,7 +177,7 @@ body{
 }
 
 .button{
-  height: 5%;
+  height: 7%;
   width: 10%;
   font-size: 120%;
   border-radius: 0.5em;
@@ -189,4 +191,5 @@ body{
   font-weight: bolder;
   letter-spacing: .1rem;
   background-color: orange;
+  border: solid 0.1em black;
 }

@@ -11,8 +11,7 @@ class Luchador {
         this.imagen = imagen;
     }
 
-    //esto es un método ... empieza a atacar p1 a p2
-    //la fuerza de p1 será la fuerza menos la defensa del p2
+    //la fuerza de player1 será la fuerza menos la defensa del player2
     golpear = (atacado) => {
         
         let damage = this.fuerza - atacado.defensa;
@@ -46,6 +45,7 @@ const cambiaPantalla = (valor) => {
 
 //Array con las fases que tendra el juego
 let arrayFases = ["fase1", "fase2", "fase3", "fase4"];
+
 // Si la fase es a la que voy no la oculto (la meto en pantallasOcultar), si no, la oculto.
 let pantallasOcultar = arrayFases.filter(fase=> {
 
@@ -59,7 +59,8 @@ let pantallasOcultar = arrayFases.filter(fase=> {
         return true;
     }
 });
-//si estoy en la batalal de combate actualizo barras de vida
+
+//si estoy en la batallal de combate actualizo barras de vida
 //y muestro pj
         
 if (valor === 3) {
@@ -87,7 +88,7 @@ if (valor === 1) {
 let turno = 1;
 
 //cada  vez que se llama a pulsaAtacar suma 1
-//si el turno es par golpea p1 a p2, si el turno es impar p2 a p1
+//si el turno es par golpea player1 a player2, si el turno es impar player2 a player1
 //cada vez que se ataca se actualiza la vida del personaje con muestraPersonaje()
 const pulsaAtacar = () => {
 
@@ -117,7 +118,7 @@ const pulsaAtacar = () => {
 
     }
 
-    //cuando la vida de p1 o p2 sea menor o igual a 0 cambia a pantalla final
+    //cuando la vida de player1 o player2 sea menor o igual a 0 cambia a pantalla final
     if (player1.vida <= 0 || player2.vida <= 0) {
 
         cambiaPantalla(4);
@@ -134,12 +135,12 @@ let personaje4 = document.getElementById("personaje4");
 let player1 = "";
 let player2 = "";
 
-//el texto en fase2 empezará con Jugador1 eligiendo personaje
+//el texto en fase2 empezará con Player1 eligiendo personaje
 //se mostrará este texto al llegar a la fase2
 let textoSeleccion = document.getElementById("textoSeleccion");
 textoSeleccion.innerText = "Player 1, selecciona personaje";
 
-// crea una función para que al pulsar jugador1 sobre un pj salte al jugador2.
+// crea una función para que al pulsar player1 sobre un pj salte al jugador2.
 const pulsaPersonaje = (ev) => {
 
     //selección será la id de cada personaje
@@ -149,18 +150,18 @@ const pulsaPersonaje = (ev) => {
     if (player1 === "") { 
         player1 = idToPj(seleccion);
 
-        //se muestra texto cuando jugador 1 ya ha elegido
+        //se muestra texto cuando player 1 ya ha elegido
         let textoSeleccion = document.getElementById("textoSeleccion");
         textoSeleccion.innerText = "Player 2, selecciona personaje";
 
     }else{
 
         player2 = idToPj(seleccion);
-        cambiaPantalla(3);//cuando p2 elige cambia de pantalla
+        cambiaPantalla(3);//cuando player2 elige cambia de pantalla
 
     }
 
-    //si el p2 elige el mismo pj que p1
+    //si el player2 elige el mismo pj que player1
     if (player2 === player1) {
 
         //salta un texto en rojo 
@@ -229,7 +230,7 @@ Boo = new Luchador ("Boo",100,90,70,7,"img/kidboo.png");
 Freezer = new Luchador ("Freezer",100,90,60,3,"img/freezer.png");
 
 
-textoSeleccion.innerText = "Jugador 1, elige personaje";
+textoSeleccion.innerText = "Player 1, elige personaje";
 
 }
 
