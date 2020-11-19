@@ -7,7 +7,6 @@ class Luchador {
         this.fuerza = fuerza;
         this.defensa = defensa;
         this.ki = ki;
-
         this.imagen = imagen;
     }
 
@@ -24,9 +23,7 @@ class Luchador {
         actBarrasVida();
         
         ganador();
-
-        
-        
+           
     }
 }
 let Goku = new Luchador ("Goku", 100,80,70,9,"img/SonGoku.png");
@@ -48,7 +45,6 @@ let arrayFases = ["fase1", "fase2", "fase3", "fase4"];
 
 // Si la fase es a la que voy no la oculto (la meto en pantallasOcultar), si no, la oculto.
 let pantallasOcultar = arrayFases.filter(fase=> {
-
 
     if (fase === faseSiguiente) {
 
@@ -105,8 +101,6 @@ const pulsaAtacar = () => {
         muestraPersonaje();
     }
     
-
-
     //el boton de atacar se mostrará si la vida es mayor que 0
     if (player1.vida >= 1 || player2.vida >= 1) {
 
@@ -228,7 +222,6 @@ Goku = new Luchador ("Goku", 100,80,70,9,"img/SonGoku.png");
 Vegeta = new Luchador ("Vegeta",100,80,50,8,"img/Vegeta.png");
 Boo = new Luchador ("Boo",100,90,70,7,"img/kidboo.png");
 Freezer = new Luchador ("Freezer",100,90,60,3,"img/freezer.png");
-
 
 textoSeleccion.innerText = "Player 1, elige personaje";
 
